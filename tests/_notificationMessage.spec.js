@@ -6,7 +6,7 @@ test.beforeEach(async ({ browser }) => {
     await page.goto("/")
 })
 
-test.describe('Notification Message', () => {
+test.describe('Notification Message page for Automation Testing Practice', () => {
     test('Action Successful', async ({ page }) => {
         await page.goto('/notification-message')
         await expect(page.locator('h1:has-text("Notification Message page for Automation Testing Practice")')).toBeVisible()

@@ -7,7 +7,7 @@ test.beforeEach(async ({ browser }) => {
     await page.goto("/")
 })
 
-test.describe('Verify Web inputs', async () => {
+test.describe('Web inputs page for Automation Testing Practice', async () => {
 
 //data-test
 let webInputNumber = 23;

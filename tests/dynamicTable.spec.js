@@ -6,7 +6,7 @@ test.beforeEach(async ({ browser }) => {
     await page.goto("/")
 })
 
-test.describe('Dynamic Table ', () => {
+test.describe('Dynamic Table page for Automation Testing Practice', () => {
     test('For Chrome process get value of CPU load.', async ({ page }) => {
 
         await page.goto('/dynamic-table')

@@ -7,7 +7,7 @@ test.beforeEach(async ({ browser }) => {
     await page.goto("/")
 })
 
-test.describe('Test Login page', async () => {
+test.describe('Test Login page for Automation Testing Practice', async () => {
 
 //data-test
 let userName = "practice"
