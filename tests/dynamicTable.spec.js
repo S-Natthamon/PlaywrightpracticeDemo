@@ -27,9 +27,6 @@ test.describe('Dynamic Table ', () => {
 
         // Log the CPU load for Chrome
         console.log(`CPU Load for Chrome: ${cpuLoad}`);
-
-        // Close the browser
-        //await browser.close();
     })
 
     test('Compare it with value in the yellow label.', async ({ page }) => {
@@ -63,8 +60,6 @@ test.describe('Dynamic Table ', () => {
         console.log("Unable to extract CPU load from one of the sources.");
     }
 
-    // Close the browser
-    //await browser.close();
     })
     
     
