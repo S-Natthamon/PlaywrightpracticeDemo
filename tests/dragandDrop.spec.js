@@ -42,12 +42,13 @@ test.describe('Drag and Drop page for Automation Testing Practice', () => {
     test('Box A drag and drop no Box B', async ({ page }) => {
         await page.goto('/drag-and-drop')
         await expect(page.locator('h1:has-text("Drag and Drop page for Automation Testing Practice")', { exact: true })).toBeVisible()
+        await expect(page.locator('.col-md-9')).toContainText("This is a drag-and-drop demo page.")
 
-        await page.locator('#column-a').dragTo(page.locator('.col-md-9'))
-        // await page.locator('#column-b').hover()
-        // await page.mouse.down()
-        // await page.locator('#column-a').hover()
-        // await page.mouse.up()        
+        // await page.locator('#column-a').dragTo(page.locator('.col-md-9'))
+        await page.locator('#column-a').hover()
+        await page.mouse.down()
+        await page.locator('.col-md-9').hover()
+        await page.mouse.up()        
 
         await expect(page.locator('#column-a header:has-text("A")', { exact: true })).toBeVisible()
         await expect(page.locator('#column-b header:has-text("B")', { exact: true })).toBeVisible()
