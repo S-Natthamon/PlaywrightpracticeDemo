@@ -24,14 +24,13 @@ test.describe('Autocomplete page for Automation Testing Practice', () => {
 
         for (let option of fromCountryName) {
             
-            const value = await option.textContent()
-            //console.log(value);
+            const value = await option.textContent(countryNameSearch)
+            console.log(value);
 
-            // if (value.includes(countryNameSelect)) {
-                
-            //     await option.click()
-            //     break;
-            // }
+            if (value && value.includes(countryNameSelect)) {
+                await option.click()
+                break;
+            }
         }
 
         await page.waitForTimeout(5000)
