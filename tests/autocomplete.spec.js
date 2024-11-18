@@ -24,7 +24,7 @@ test.describe('Autocomplete page for Automation Testing Practice', () => {
 
         for (let option of fromCountryName) {
             
-            const value = await option.textContent(countryNameSearch)
+            const value = await option.textContent()
             console.log(value);
 
             if (value && value.includes(countryNameSelect)) {
