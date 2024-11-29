@@ -63,6 +63,5 @@ test.describe('Dynamic Table page for Automation Testing Practice', () => {
     })
     
     
-    
 })
 
